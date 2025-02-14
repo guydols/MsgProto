@@ -8,7 +8,7 @@ MsgProto is a proof-of-concept project to implement a custom RPC-like client-ser
 
 #### TCP
 ```tcp.rs``` contains 2 helper functions to send en receive framed TCP data.
-Framed meaning that the first usized sized data in the TCP data tells you the amount of bytes to except.
+Framed meaning that the first ```usize``` sized data in the TCP data tells you the amount of bytes to except.
 This gives us the ability to send serialized data over TCP and deserialize on the other side.
 
 #### Message
